@@ -73,15 +73,15 @@ body {
   background-color: #f7e4bc;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .first-point:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .second-point {
@@ -99,6 +99,7 @@ body {
 }
 
 .third-point {
+  vertical-align: middle;
   top: 50%;
   -webkit-transform: translate(0%, 30%);
           transform: translate(0%, 30%);
@@ -109,7 +110,10 @@ body {
   background-color: #fab420;
   -ms-flex-line-pack: center;
       align-content: center;
-  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .blocks {
@@ -122,5 +126,10 @@ body {
 
 .services-points__descr {
   text-align: center;
+}
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */
