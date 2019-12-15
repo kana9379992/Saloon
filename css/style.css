@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-  background: #00CCCC;
+  background: var(--main-color);
 }
 
 .nav-link, .navbar-brand {
@@ -139,6 +139,10 @@ body {
   padding-bottom: 80px;
 }
 
+.steps__headtext {
+  font-size: var(--head-text-size);
+}
+
 img {
   height: 100%;
   width: 100%;
@@ -155,8 +159,18 @@ img {
 }
 
 .services {
+  padding-top: 50px;
   text-align: center;
   background-color: #ededed;
+}
+
+.services__headtext {
+  margin-bottom: 30px;
+  font-size: var(--head-text-size);
+}
+
+.advantages-block__img img {
+  background-color: red;
 }
 
 .advantages {
@@ -203,6 +217,25 @@ img {
 .advantages-header__text {
   text-align: center;
   padding-bottom: 20px;
-  font-size: 40px;
+  font-size: var(--head-text-size);
+}
+
+.st0 {
+  stroke: #24afff;
+  stroke-width: 0;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+.st1 {
+  stroke: #24afff;
+  stroke-width: 0;
+  stroke-miterlimit: 0;
+  fill: #24afff;
+}
+
+body {
+  --head-text-size: 35px;
+  --main-color: #24afff;
 }
 /*# sourceMappingURL=style.css.map */
