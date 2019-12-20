@@ -4,7 +4,14 @@
 }
 
 body {
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -53,27 +60,8 @@ body {
   background-color: #343a40 !important;
 }
 
-.header {
-  background: url(../img/bg.jpg) top right no-repeat;
-  background-size: cover;
-  background-position: 80% 0;
-}
-
 .navbar-brand:hover {
   color: #fff;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-content {
-  margin-left: 5%;
 }
 
 .header-content__text {
@@ -92,6 +80,27 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.header-content__addText {
+  font-family: Monotype;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .first-point {
@@ -332,5 +341,10 @@ body {
   --main-color: #24afff;
   --main-color-light: #6bc8fd;
   --main-color--extra-light: #a6ddfd;
+}
+
+@font-face {
+  font-family: Monotype;
+  src: url("../fonts/MonotypeCorsiva_Regular.ttf") format("truetype");
 }
 /*# sourceMappingURL=style.css.map */
