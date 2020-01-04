@@ -1,13 +1,19 @@
 img 
   height: 100%;
   width: 100%;
-  object-fit: contain
+  object-fit: cover
 .services-blocks
-  background-color: #fff
+  position: relative
+  display: block
   margin-bottom: 40px
   padding-top: 10px
   padding-bottom: 10px
   text-align: center
+  transition: 0.2s
+  &:hover
+    z-index: 1
+    transform: scale(1.1)
+    box-shadow: 0 25px 40px rgba(0,0,0,.5)
 .services
   padding-top: 50px
   text-align: center
@@ -21,7 +27,15 @@ img
   margin-bottom: 30px
 .services-block__text
   padding-bottom: 10px
+  position: absolute
+  top: 0
+  left: 5
+
 .service-headline_text
-  padding-top: 10px
-  padding-bottom: 10px
-  font-size: 25px
+ 
+  position: absolute
+  top: 110px
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 2
