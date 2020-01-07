@@ -196,8 +196,12 @@ body {
   padding-bottom: 20px;
 }
 
-.services-points__descr {
-  padding-top: 20px;
+.horizontal-line {
+  width: 100px;
+  height: 50px;
+  left: 50%;
+  display: block;
+  background-color: #000;
 }
 
 .services-blocks img {
@@ -252,6 +256,7 @@ body {
   font-family: var(--text-font);
   font-weight: var(--common-text-weight);
   margin-bottom: 20px;
+  word-wrap: nowrap;
 }
 
 .services__descr {
@@ -406,8 +411,8 @@ body {
 body {
   --head-text-size: 35px;
   --main-color: #ff2f00;
-  --main-color-light: #6bc8fd;
-  --main-color--extra-light: #a6ddfd;
+  --main-color-light: #ff8f75;
+  --main-color--extra-light: #ffd4c9;
   --text-font: Comfortaa;
   --common-text-weight: 400;
   --head-text-weight: 600;
