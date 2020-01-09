@@ -166,14 +166,6 @@ body {
   color: white;
 }
 
-.blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .overlay {
   text-align: center;
 }
@@ -196,12 +188,9 @@ body {
   padding-bottom: 20px;
 }
 
-.horizontal-line {
-  width: 100px;
-  height: 50px;
-  left: 50%;
-  display: block;
-  background-color: #000;
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 .services-blocks img {
@@ -257,6 +246,7 @@ body {
   font-weight: var(--common-text-weight);
   margin-bottom: 20px;
   word-wrap: nowrap;
+  margin-top: 10px;
 }
 
 .services__descr {
