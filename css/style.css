@@ -414,3 +414,81 @@ body {
   src: url("../fonts/MonotypeCorsiva_Regular.ttf") format("truetype");
 }
 /*# sourceMappingURL=style.css.map */
+body {
+  background: #ece5da;
+  font-family: 'Raleway', sans-serif;
+}
+
+.price-block {
+  margin: auto;
+  position: relative;
+  width: 50vw;
+  min-width: 320px;
+  height: 200px;
+}
+
+.price-block h2 {
+  border-radius: 2px;
+  position: relative;
+  background: tomato;
+  height: 40px;
+  text-transform: uppercase;
+  color: ivory;
+  font-weight: 200;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px -2px rgba(0,0,0,.35);
+  transition: all .4s;
+}
+
+.price-block:hover h2{
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 5px -1px rgba(0,0,0,.35);
+ }
+.price-block:hover:active h2{
+  transform: translateY(10px);
+  box-shadow: 0px -1px 2px 0px rgba(0,0,0,.35);
+ }
+
+input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+#toggle:checked ~.price-block__points {
+  height: 0%;
+}
+
+.price-block__points {
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  text-align: center;
+  transition: all .4s ease-out;
+  height: 100%;
+  
+}
+.price-block .point {
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 5px;
+  background: tomato;
+  transition: background 3s;
+  box-shadow: 2px 2px 10px -2px rgba(0,0,0,.35);
+}
