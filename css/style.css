@@ -419,6 +419,8 @@ body {
 }
 
 .prices-block {
+  margin-top: 10px;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,6 +435,7 @@ body {
 }
 
 .serviceName_text {
+  padding-bottom: 10px;
   text-align: center;
   font-family: var(--text-font);
   font-weight: var(--head-text-weight);
@@ -457,5 +460,9 @@ body {
 
 .prices-value {
   text-align: right;
+}
+
+.indented {
+  text-indent: 20px;
 }
 /*# sourceMappingURL=style.css.map */
