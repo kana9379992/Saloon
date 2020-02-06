@@ -379,8 +379,11 @@ body {
   max-width: 100%;
 }
 
-.slider img {
-  width: 150px;
-  height: 190px;
+.slider {
+  margin: 0 auto;
+}
+
+.reviews-headtext {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
