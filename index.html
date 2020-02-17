@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="overlay-header-nav">
@@ -15,23 +16,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">    
+        <div class="collapse navbar-collapse " id="navbarSupportedContent anchor">    
             <ul class="navbar-nav ">
               <li class="nav-item">
-              <a class="nav-link" data-value="about" href="#">About</a></li>  
+              <a class="nav-link" data-value="about" href="#services">Виды услуг</a></li>  
               <li class="nav-item">
-              <a class="nav-link " data-value="portfolio"href="#">Portfolio</a>    
+              <a class="nav-link " data-value="portfolio"href="#advantages">Почему мы?</a>    
           </li>
             <li class="nav-item"> 
-            <a class="nav-link " data-value="blog" href="#">Blog</a></li>   
+            <a class="nav-link " data-value="blog" href="#prices">Цены</a></li>   
             <li class="nav-item">  
-            <a class="nav-link " data-value="team" href="#">Team</a></li>  
-            <li class="nav-item"> 
-            <a class="nav-link " data-value="contact" href="#">Contact</a></li> 
+            <a class="nav-link " data-value="team" href="#reviews">Отзывы</a></li>  
+            
         </ul> 
         </div></nav>
       </div>
-      <div class="services">
+      <div class="services" id="services">
         <div class="container align-items-center">
           <div class="services__headtext">Виды услуг</div>
           <div class="services__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde amet! Autem, fugiat voluptas. Accusantium.</div>
@@ -80,7 +80,7 @@
           </div>
         </div>
       </div>
-      <div class="advantages">
+      <div class="advantages" id="advantages">
       
         <div class="container">
           <div class="advantages-header__text">Почему мы?</div>
@@ -113,7 +113,7 @@
         </div>
         </div>
    
-      <div class="prices">
+      <div class="prices" id="prices">
         <div class="prices-headText">Цены</div>
       <div class="container">
         <div class="row d-flex justify-content-around">    
@@ -252,16 +252,17 @@
       </div>
         
       </div>
-     <div class="reviews">
+     <div class="reviews" id="reviews">
       <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/1.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
-                  <p>Добрый вечер, хотела поблагодарить вас за мастеров. Приехали вовремя и сделали все с душой. Очень удобный салон для мам и тех, кому срочно нужны мастера на выезд. Жалко их рекомендовать так как потом боюсь самой придется записываться за неделю заранее</p>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«...‎Очень удобный салон для мам и тех, кому срочно нужны мастера на выезд...»‎</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
+                  <p class="reviews-content">Добрый вечер, хотела поблагодарить вас за мастеров. Приехали вовремя и сделали все с душой. Очень удобный салон для мам и тех, кому срочно нужны мастера на выезд. Жалко их рекомендовать так как потом боюсь самой придется записываться за неделю заранее :)</p>
                 </div>
               </div>
           </div>
@@ -270,8 +271,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/2.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«‎...в восторге от макияжа и причёски...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Спасибо @home.beauty.kz. И в отдельности визажисту Куралай. До последнего не давала смотреть в зеркало (что очень меня пугало, ибо был такой печальный результат после). Но это был совсем другой случай!!! Она профи своего дела. Я в восторге от макияжа и причёски. Впрочем, вы и сами можете оценить</p>
                 </div>
               </div>
@@ -281,8 +283,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/3.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«...Для мам с детьми очень удобно...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>У вас хороший сервис. Многие знакомые вызывали мастеров через вас, всегда выручали. Для мам с детьми очень удобно, спасибо вам</p>
                 </div>
               </div>
@@ -292,8 +295,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/4.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«‎...В следующий раз обязательно буду обращаться к Вам...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Добрый вечер! Хотела сказать спасибо вам и прекрасной девушке Эльмире. Мне и всем, кто видел меня вчера понравилась её работа. Не заметила даже как прошло время пока она красила меня и крутила мне волосы. Она профессионал своего дела. В следующий раз обязательно буду обращаться к Вам. Спасибо большое</p>
                 </div>
               </div>
@@ -303,8 +307,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/5.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«‎...Быстро, качественно, и есть ориентированность на результат...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>День добрый. Более чем (довольна работой мастера). Быстро, качественно, и есть ориентированность на результат. Спасибо большое мастеру и Вам за труд и выручку</p>
                 </div>
               </div>
@@ -314,8 +319,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/6.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«...‎Теперь я ваша постоянная клиентка...»</h3>
+                  <h4 class="reviews-hashtag">#ОтзывыHomeBeauty</h4>
                   <p>Хотела еще раз поблагодарить вас. Адема вообще молодец, всё держалось прям до самого вечера. Много комплиментов получила. И тебе спасибо за скидку. Теперь я ваша постоянная клиентка.</p>
                 </div>
               </div>
@@ -325,8 +331,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/7.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«...Буду теперь с вами работать, так как удобно когда сидишь с ребенком дома‎...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Мне понравилась работа вашего мастера, спасибо Вам, и отдельное спасибо ей. Буду теперь с вами работать, так как удобно когда сидишь с ребенком дома</p>
                 </div>
               </div>
@@ -337,9 +344,10 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/9.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
-                  <p>Девочки оперативные, собранные, опытные в своем деле. Вы - наше спасение, для мамочек к декрете очень удобно. С 11-ти до 16-ти часов успеть сделать столько прцоедур (массаж, маникюр, педикюр, шугаринг, коррекция юровей, макияж и укладку) впервые, но это реально только с вами</p>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«...Вы - наше спасение, для мамочек в декрете очень удобно‎...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
+                  <p>Девочки оперативные, собранные, опытные в своем деле. Вы - наше спасение, для мамочек в декрете очень удобно. С 11-ти до 16-ти часов успеть сделать столько прцоедур (массаж, маникюр, педикюр, шугаринг, коррекция юровей, макияж и укладку) впервые, но это реально только с вами</p>
                 </div>
               </div>
           </div>
@@ -348,8 +356,9 @@
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
                   <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/10.png" alt="">
-                <div class="carousel-text col-md-5 col-9">
-                  <h2>Lorem ipsum dolor sit amet.</h2>
+                <div class="carousel-text col-md-8 col-9">
+                  <h3 class="reviews-headtext">«...Спасибо вам большое, девочки у вас молодцы‎...»</h3>
+                  <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Абсолютно всем довольна!!! Пришли вовремя, собрали быстренько. И прическа, и макияж были выполнены на отлично. Все продержалось до конца свадьбы, несмотря на ветер и безбашенные танцы :)</p>
                     <p>Прическу точь в точь сделала мастер, как я и хотела. А визажист создал самый нежный образ. Спасибо вам большое, девочки у вас молодцы</p>
                 </div>
@@ -367,14 +376,47 @@
           </a>
         </div>
      </div>
-     
-        
-     
- 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <div class="call-order">
+       <div class="container">
+        <h3 class="call-order__headText">Еще остались вопросы?</h3>
+        <div class="call-order__text">Оставьте нам свои данные и мы свяжемся с вами в кратчайшие сроки</div>
+        <form ">
+         
+            <div class="form-group d-flex justify-content-around">
+              <div class="input-overlay col-md-5 col-12"> 
+                <input type="nameInput" class="form-control col-ms-5" id="name"  placeholder="Введите имя">
+              </div>
+            </div>
+            <div class="form-group d-flex justify-content-around">   
+              <div class="input-overlay col-md-5 col-12">          
+              <input type="tel" class="form-control col-ms-5" id="exampleInputTel" placeholder="Введите номер телефона" style="display:block; margin : 0 auto;">
+            </div>
+            </div>
+          
+          <button type="submit" class="btn btn-primary call-order__button">Позвоните мне</button>
+        </form>
+
+        </form>
+       </div>
+     </div>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $("#anchor").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href'),
+    
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+    });
+    });
+    </script>
 </body>
 </html>

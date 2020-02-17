@@ -74,7 +74,7 @@ body {
 }
 
 .header-content__text {
-  font-family: 'Lato', sanf-serif;
+  font-family: 'Futura', sanf-serif;
 }
 
 .order-button {
@@ -275,6 +275,7 @@ body {
       justify-content: space-around;
   text-align: center;
   vertical-align: top;
+  font-size: var(--common-text-size);
   font-family: var(--text-font);
 }
 
@@ -287,11 +288,12 @@ body {
 }
 
 body {
-  --head-text-size: 35px;
+  --head-text-size: 40px;
+  --common-text-size: 18px;
   --main-color: #ff2f00;
   --main-color-light: #ff8f75;
   --main-color--extra-light: #ffd4c9;
-  --text-font: Comfortaa;
+  --text-font: Futura;
   --common-text-weight: 400;
   --head-text-weight: 600;
   --orange-text-color: #ff5900;
@@ -299,7 +301,7 @@ body {
 
 @font-face {
   font-family: Futura;
-  src: url("../fonts/MonotypeCorsiva_Regular.ttf") format("truetype");
+  src: url("../fonts/FuturaPT-book.ttf") format("truetype");
 }
 
 .prices {
@@ -336,6 +338,11 @@ body {
   display: block;
 }
 
+.service-type p {
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+
 .serviceName_text {
   padding-top: 15px;
   text-align: center;
@@ -362,6 +369,8 @@ body {
 }
 
 .prices-value {
+  font-family: var(--text-font);
+  font-size: 15px;
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -395,5 +404,57 @@ body {
 .carousel {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.reviews-headtext {
+  font-family: var(--text-font);
+}
+
+.carousel-text p {
+  font-family: var(--text-font);
+  font-size: var(--common-text-size);
+}
+
+.reviews-hashtag {
+  font-family: var(--text-font);
+}
+
+.call-order {
+  text-align: center;
+}
+
+.call-order__headText {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.call-order__text {
+  padding-bottom: 20px;
+}
+
+.input-overlay {
+  padding-bottom: 10px;
+}
+
+.call-order__button {
+  margin-bottom: 30px;
+}
+
+.call-order__headText {
+  font-family: var(--text-font);
+  font-size: var(--head-text-size);
+}
+
+.call-order__text {
+  font-family: var(--text-font);
+  font-size: var(--common-text-size);
+}
+
+.form-control {
+  font-family: var(--text-font);
+}
+
+.btn {
+  font-family: var(--text-font);
 }
 /*# sourceMappingURL=style.css.map */

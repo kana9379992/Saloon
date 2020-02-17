@@ -1,9 +1,8 @@
 $(document).ready(function(){
-  $('.slider').slick({
-    dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
+  $("#anchor").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
   });
-})
+});
