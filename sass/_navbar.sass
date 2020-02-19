@@ -1,42 +1,48 @@
-.overlay-header-nav
+.overlay-haeder-nav
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/background.jpg")
   background-position: center top
   background-size: cover
   width: 100%
   height: 100vh
-.navbar
-  background-color: transparent
+  color: #000
 
-.nav-link, .navbar-brand
-  color: #e3e4e6
-  cursor: pointer
-#scroll-navbar
-  background-color: black
-  color: white
-  transition: top 0.7s
-.nav-link
-  margin-right: 1em !important
-  &:hover
-      color: black
-      .navbar-nav
-         color: red 
+.navbar-brand
+  color: #fff
+nav
+  -webkit-transition: padding-top .7s,padding-bottom .7s
+  -moz-transition: padding-top .7s,padding-bottom .7s
+  transition: padding-top .7s,padding-bottom .7s
+  border: none
 
-  &:hover
-    
-    color: #fff
-
-.navbar-collapse
-  justify-content: flex-end
-
-.navbar-toggler
-  background: #fff !important
-
-.navbar-collapse
-  justify-content: flex-end
-
-.bg-dark, .bg-primary
-  background-color: #343a40 !important
+.shrink
+  padding-top: 0
+  padding-bottom: 0
+  max-height: 50px
+  background-color: #212529
+  opacity: 0.5
+  transition: 2s
 
 
-.navbar-brand:hover
-   color: #fff
+
+.banner-heading
+ 
+  color: #fff
+
+.banner-sub-heading
+
+  color: #fff
+
+.btn-banner
+  padding: 5px 20px
+  border-radius: 10px
+  font-weight: 700
+  line-height: 1.5
+  text-align: center
+  color: #fff
+  text-transform: uppercase
+
+.text-intro
+  width: 90%
+  margin: auto
+  text-align: center
+  padding-top: 30px
