@@ -11,7 +11,8 @@
 <body>
  
   <div class="overlay-header-nav" id="home">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="banner">
+    <div id="banner"></div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <a class="navbar-brand" href="#home">Home Beauty</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -19,7 +20,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#services">Виды услуг</a>
+            <a class="nav-link"   href="#services">Виды услуг</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#advantages">Почему мы?</a>
@@ -30,22 +31,27 @@
           <li class="nav-item">
             <a class="nav-link" href="#reviews">Отзывы</a>
           </li> 
+          <li class="nav-item">
+            <div class="navbar_call_order" id="#navbar_call_order"><button type="submit" class="btn btn-primary">Оставить заявку</button></div>
+          </li> 
         </ul>
       </div>
       
     </nav>
-    <div class="box">
+    <div class="banner">
       <div class="container">
         <div class="banner-text">
         <div class="banner-sub-heading">
           Салон красоты там, где вам удобно
         </div>
         <div class="banner-descr">Выездной салон красоты. Круглосуточно и без выходных</div>
-        <button type="button" class="btn btn-warning text-dark btn-banner">Оставить заявку</button>
+        <div class="navbar_call_order" id="#navbar_call_order"><button type="submit" class="btn btn-primary">Оставить заявку</button></div>
+        
         </div>
         </div>
     </div>
-    </div>   
+    </div> 
+
   <div class="services" id="services">
         <div class="container align-items-center">
           <div class="services__headtext">Виды услуг</div>
@@ -87,18 +93,13 @@
       <img src="./img/services/depilation.jpg" class="services-block__img" alt="Работа визажиста">      
       <div class="service-headline_text"><h6>Эпиляция</h6>
       <!-- <p>Мы имеем большой опыт в проведении эпиляции и делаем её быстро, качественно</p>--></div>      
-    
   </div>
-          
-          
-            <!-- <div class="services-block__text">Современная стрижка, которая подчеркнёт красоту ваших волос</div> -->
-          </div>
-        </divdiv>
-      </div></div>
-   <div class="advantages" id="advantages">
-      
-        <div class="container">
-          <div class="advantages-header__text">Почему мы?</div>
+   </div>
+    </div>
+     </div>
+   <div class="advantages" id="advantages">        
+      <div class="advantages-header__text">Почему мы?</div>
+          <div class="container">
           <div class="row d-flex justify-content-around">
             <div class="advantage-blocks col-md-3 col-sm-9 col-9">
               <div class="advantages-block__img">
@@ -414,7 +415,46 @@
         </form>
        </div>
      </div>
-  
+<div class="overlay-popup" id="overlay-popup">
+  <div class="container">
+    
+      <div class="popup col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10" id="#popup">
+        <h4 class="leave-order-text">Оставить заявку</h4>
+        <div class="form-group d-flex justify-content-around">
+          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10"> 
+            <label for="nameInput">Введите имя</label>
+            <input type="nameInput" class="form-control col-ms-5" id="name"  placeholder="">
+          </div>
+        </div>
+        <div class="form-group d-flex justify-content-around">   
+          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">  
+            <label for="nameInout">Введите номер телефона</label>        
+          <input type="tel" class="form-control col-ms-5" id="intlTelInput" placeholder="" style="display:block; margin : 0 auto;">
+        </div>
+        </div>
+        <div class="form-group d-flex justify-content-around">   
+          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">          
+            <label for="nameInout">Введите свой адрес</label> 
+          <input type="adress" class="form-control col-ms-5" id="exampleInputAdress" placeholder="" style="display:block; margin : 0 auto;">
+        </div>
+        </div>
+        <div class="form-group d-flex justify-content-around">   
+          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">    
+            <label for="nameInout">Выберите дату</label>       
+          <input type="date" class="form-control col-ms-5" id="exampleInputAdress" placeholder="" style="display:block; margin : 0 auto;">
+        </div>
+        </div>
+        <div class="form-group d-flex justify-content-around">   
+          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">     
+            <label for="nameInout">Выберите удобное время</label>      
+          <input type="time" class="form-control col-ms-5" id="exampleInputTime" placeholder="" style="display:block; margin : 0 auto;">
+        </div>
+        </div>
+        <div class="call-order__button"><button type="submit" class="btn btn-primary">Оставить заявку</button></div>
+        
+      </div>
+  </div>
+</div>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
