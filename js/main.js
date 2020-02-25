@@ -40,3 +40,5 @@ $(document).on("click", function(){
   $('#overlay-popup').fadeOut( "slow")
 });
 });
+new WOW().init();
+$("#intlTelInput").inputmask();
