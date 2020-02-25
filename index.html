@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 <body>
  
@@ -32,7 +33,7 @@
             <a class="nav-link" href="#reviews">Отзывы</a>
           </li> 
           <li class="nav-item">
-            <div class="navbar_call_order" id="#navbar_call_order"><button type="submit" class="btn btn-primary">Оставить заявку</button></div>
+            <div class="navbar_call_order" id="#navbar_call_order"><button type="button" class="btn btn-primary">Оставить заявку</button></div>
           </li> 
         </ul>
       </div>
@@ -41,12 +42,12 @@
     <div class="banner">
       <div class="container">
         <div class="banner-text">
-        <div class="banner-sub-heading">
+        <div class="banner-sub-heading wow fadeInUp delay-0.5s">
           Салон красоты там, где вам удобно
         </div>
-        <div class="banner-descr">Выездной салон красоты. Круглосуточно и без выходных</div>
-        <div class="navbar_call_order" id="#navbar_call_order"><button type="submit" class="btn btn-primary">Оставить заявку</button></div>
-        
+        <div class="banner-descr wow fadeInUp delay-1s">Выездной салон красоты. Круглосуточно и без выходных</div>
+        <div class="navbar_call_order"  id="navbar_call_order">
+          <button type="button" class="btn btn-info btn-lg wow fadeInUp delay-1s" data-toggle="modal" data-target="#myModal">Open Modal</button></div>
         </div>
         </div>
     </div>
@@ -54,42 +55,42 @@
 
   <div class="services" id="services">
         <div class="container align-items-center">
-          <div class="services__headtext">Виды услуг</div>
-          <div class="services__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde amet! Autem, fugiat voluptas. Accusantium.</div>
+          <div class="services__headtext wow fadeInUp delay-0.5s">Виды услуг</div>
+          <div class="services__descr wow fadeInUp delay-1s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, unde amet! Autem, fugiat voluptas. Accusantium.</div>
           <div class="row d-flex justify-content-around align-items-center">
-            <div class="services-blocks nopadding col-sm-8 col-md-3  col-8 align-items-center">   
+            <div class="services-blocks nopadding col-sm-8 col-md-3  col-8 align-items-center wow fadeInUp delay-0.5s">   
                 <img src="./img/services/makeup.jpg" class="services-block__img" alt="Работа визажиста">      
                 <div class="service-headline_text"><h6>Макияж</h6>
                 <!-- <p>Профессиональный визаж от настоящих мастеров с художественным чутьем</p>--></div>      
               
             </div>
-            <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center"> 
+            <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center wow fadeInUp delay-0.5s"> 
               
               <img src="./img/services/wedding.jpg" class="services-block__img" alt="Работа визажиста">      
               <div class="service-headline_text"><h6>Свадебный образ</h6>
               <!-- <p>Красивый свадебный образ (свадебный макияж+ прическа) для невесты</p>--></div>      
             
           </div>
-          <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center">   
+          <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center wow fadeInUp delay-0.5s">   
             <img src="./img/services/nail.jpg" class="services-block__img" alt="Работа визажиста">      
             <div class="service-headline_text"><h6>Маникюр</h6>
             <!-- <p>Доверяя маникюр нам, вы делаете свой выбор в пользу профессионального ухода за руками</p>--></div>      
           
         </div>
-        <div class="services-blocks nopadding col-sm-8 col-md-3 col-8 align-items-center">   
+        <div class="services-blocks nopadding col-sm-8 col-md-3 col-8 align-items-center wow fadeInUp delay-0.5s">   
           <img src="./img/services/eyelashes.jpg" class="services-block__img" alt="Работа визажиста">      
           <div class="service-headline_text"><h6>Наращивание ресниц</h6>
           <!-- <p>Влюбите окружающих в свой новый взгляд
             после наращивания ресниц у мастеров</p> --></div>     
         
       </div>
-      <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center">   
+      <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center wow fadeInUp delay-0.5s">   
         <img src="./img/services/hair.jpg" class="services-block__img" alt="Работа визажиста">      
         <div class="service-headline_text"><h6>Стрижка</h6>
         <!-- <p>Современная стрижка, которая подчеркнёт красоту ваших волос</p>--></div>      
       
     </div>
-    <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center">   
+    <div class="services-blocks nopadding col-sm-8 col-md-3 offset-md-1 col-8 align-items-center wow fadeInUp delay-0.5s">   
       <img src="./img/services/depilation.jpg" class="services-block__img" alt="Работа визажиста">      
       <div class="service-headline_text"><h6>Эпиляция</h6>
       <!-- <p>Мы имеем большой опыт в проведении эпиляции и делаем её быстро, качественно</p>--></div>      
@@ -98,44 +99,44 @@
     </div>
      </div>
    <div class="advantages" id="advantages">        
-      <div class="advantages-header__text">Почему мы?</div>
+      <div class="advantages-header__text wow fadeInUp delay-0.5s">Почему мы?</div>
           <div class="container">
           <div class="row d-flex justify-content-around">
             <div class="advantage-blocks col-md-3 col-sm-9 col-9">
-              <div class="advantages-block__img">
-                <img src="./img/icons/another new/quality.png" alt="">
+              <div class="advantages-block__img wow fadeInUp delay-0.5s">
+                <img src="./img/icons/another new/quality.png " alt="">
               </div>
-              <div class="advantages-blocks__text">В нашей команде 15 сертифицированных специалистов, которые работают в сфере красоты более двух лет</div>
+              <div class="advantages-blocks__text wow fadeInUp delay-1s">В нашей команде 15 сертифицированных специалистов, которые работают в сфере красоты более двух лет</div>
             </div>
             <div class="advantage-blocks col-md-3 col-sm-9 col-9">
-              <div class="advantages-block__img">
+              <div class="advantages-block__img wow fadeInUp delay-0.5s" >
                 <img src="./img/icons/another new/crowd.png" alt="">
               </div>
-              <div class="advantages-blocks__text">Мы помогли стать красивее более 700 клиентам</div>
+              <div class="advantages-blocks__text wow fadeInUp delay-1s">Мы помогли стать красивее более 700 клиентам</div>
             </div>
             <div class="advantage-blocks col-md-3 col-sm-9 col-9">
-              <div class="advantages-block__img">
+              <div class="advantages-block__img wow fadeInUp delay-0.5s">
                 <img src="./img/icons/another new/map.png" alt="">
               </div>
-              <div class="advantages-blocks__text">Наши мастера приедут туда, куда вам удобно</div>
+              <div class="advantages-blocks__text wow fadeInUp delay-1s">Наши мастера приедут туда, куда вам удобно</div>
             </div>
             <div class="advantage-blocks col-md-3 col-sm-9 col-9">
-              <div class="advantages-block__img">
+              <div class="advantages-block__img wow fadeInUp delay-0.5s">
                 <img src="./img/icons/another new/time.png" alt="">
               </div>
-              <div class="advantages-blocks__text">Вам не нужно тратьи время на поход в салон. Лишь свяжитесь с нами - мы сэкономим ваше время</div>
+              <div class="advantages-blocks__text wow fadeInUp delay-1s">Вам не нужно тратить время на поход в салон. Лишь свяжитесь с нами - мы сэкономим ваше время</div>
             </div>
           </div>
         </div>
         </div>
    
       <div class="prices" id="prices">
-        <div class="prices-headText">Цены</div>
+        <div class="prices-headText wow fadeInUp delay-0.5s">Цены</div>
       <div class="container">
         <div class="row d-flex justify-content-around">    
-          <div class="prices-block col-md-5 col-sm-7">
+          <div class="prices-block col-md-5 col-sm-7 ">
             <div class="serviceName_text">Ногтевой сервис</div>
-            <div class="prices-overlay">
+            <div class="prices-overlay wow fadeInUp delay-0.5s">
               <div class="service-type">
                 <p>Маникюр</p>
                 <p>Маникюр+гель</p>
@@ -163,7 +164,7 @@
             </div>
     
           </div>
-          <div class="prices-block col-md-5 col-sm-7">
+          <div class="prices-block col-md-5 col-sm-7 wow fadeInUp delay-0.5s">
             <div class="serviceName_text">Депиляция</div>
             <div class="prices-overlay">
               <div class="service-type">
@@ -191,7 +192,7 @@
             </div>
     
           </div>
-          <div class="prices-block col-md-5 col-sm-7">
+          <div class="prices-block col-md-5 col-sm-7 wow fadeInUp delay-0.5s">
             <div class="serviceName_text">Наращивание ресниц</div>
             <div class="prices-overlay">
               <div class="service-type">
@@ -215,7 +216,7 @@
             </div>
     
           </div>
-          <div class="prices-block col-md-5 col-sm-7">
+          <div class="prices-block col-md-5 col-sm-7 wow fadeInUp delay-0.5s">
             <div class="serviceName_text">Макияж:</div>
             <div class="prices-overlay">
               <div class="service-type">
@@ -233,7 +234,7 @@
             </div>
     
           </div>
-          <div class="prices-block col-md-5 col-sm-7">
+          <div class="prices-block col-md-5 col-sm-7 wow fadeInUp delay-0.5s">
             <div class="serviceName_text">Прочее:</div>
             <div class="prices-overlay">
               <div class="service-type">
@@ -269,13 +270,14 @@
         
       </div>
      <div class="reviews" id="reviews">
+      <div class="reviews__headtext wow fadeInUp delay-0.5s">Отзывы</div>
       <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner wow zoomIn delay-0.5s">
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/1.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/1.png" alt="">
+                <div class="carousel-text col-md-8 col-9 text-md-left text-center">
                   <h3 class="reviews-headtext">«...‎Очень удобный салон для мам и тех, кому срочно нужны мастера на выезд...»‎</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p class="reviews-content">Добрый вечер, хотела поблагодарить вас за мастеров. Приехали вовремя и сделали все с душой. Очень удобный салон для мам и тех, кому срочно нужны мастера на выезд. Жалко их рекомендовать так как потом боюсь самой придется записываться за неделю заранее :)</p>
@@ -286,8 +288,8 @@
           <div class="carousel-item active">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/2.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/2.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«‎...в восторге от макияжа и причёски...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Спасибо @home.beauty.kz. И в отдельности визажисту Куралай. До последнего не давала смотреть в зеркало (что очень меня пугало, ибо был такой печальный результат после). Но это был совсем другой случай!!! Она профи своего дела. Я в восторге от макияжа и причёски. Впрочем, вы и сами можете оценить</p>
@@ -298,8 +300,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/3.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/3.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«...Для мам с детьми очень удобно...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>У вас хороший сервис. Многие знакомые вызывали мастеров через вас, всегда выручали. Для мам с детьми очень удобно, спасибо вам</p>
@@ -310,8 +312,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/4.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/4.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«‎...В следующий раз обязательно буду обращаться к Вам...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Добрый вечер! Хотела сказать спасибо вам и прекрасной девушке Эльмире. Мне и всем, кто видел меня вчера понравилась её работа. Не заметила даже как прошло время пока она красила меня и крутила мне волосы. Она профессионал своего дела. В следующий раз обязательно буду обращаться к Вам. Спасибо большое</p>
@@ -322,8 +324,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/5.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/5.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«‎...Быстро, качественно, и есть ориентированность на результат...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>День добрый. Более чем (довольна работой мастера). Быстро, качественно, и есть ориентированность на результат. Спасибо большое мастеру и Вам за труд и выручку</p>
@@ -334,8 +336,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/6.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/6.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«...‎Теперь я ваша постоянная клиентка...»</h3>
                   <h4 class="reviews-hashtag">#ОтзывыHomeBeauty</h4>
                   <p>Хотела еще раз поблагодарить вас. Адема вообще молодец, всё держалось прям до самого вечера. Много комплиментов получила. И тебе спасибо за скидку. Теперь я ваша постоянная клиентка.</p>
@@ -346,8 +348,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/7.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/7.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«...Буду теперь с вами работать, так как удобно когда сидишь с ребенком дома‎...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Мне понравилась работа вашего мастера, спасибо Вам, и отдельное спасибо ей. Буду теперь с вами работать, так как удобно когда сидишь с ребенком дома</p>
@@ -359,8 +361,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/9.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/9.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«...Вы - наше спасение, для мамочек в декрете очень удобно‎...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Девочки оперативные, собранные, опытные в своем деле. Вы - наше спасение, для мамочек в декрете очень удобно. С 11-ти до 16-ти часов успеть сделать столько прцоедур (массаж, маникюр, педикюр, шугаринг, коррекция юровей, макияж и укладку) впервые, но это реально только с вами</p>
@@ -371,8 +373,8 @@
           <div class="carousel-item">
             <div class="carousel-overlay">
               <div class="row d-flex justify-content-around align-items-center">
-                  <img class="carousel_phone col-md-4 col-9 offset-md-1" src="img/reviews/10.png" alt="">
-                <div class="carousel-text col-md-8 col-9">
+                  <img class="carousel_phone col-md-4 col-9 offset-xl-1" src="img/reviews/10.png" alt="">
+                <div class="carousel-text col-md-8 col-9  text-md-left text-center">
                   <h3 class="reviews-headtext">«...Спасибо вам большое, девочки у вас молодцы‎...»</h3>
                   <h5 class="reviews-hashtag">#ОтзывыHomeBeauty</h5>
                   <p>Абсолютно всем довольна!!! Пришли вовремя, собрали быстренько. И прическа, и макияж были выполнены на отлично. Все продержалось до конца свадьбы, несмотря на ветер и безбашенные танцы :)</p>
@@ -394,11 +396,11 @@
      </div>
      <div class="call-order">
        <div class="container">
-        <h3 class="call-order__headText">Еще остались вопросы?</h3>
-        <div class="call-order__text">Оставьте нам свои данные и мы свяжемся с вами в кратчайшие сроки</div>
-        <form ">
+        <h3 class="call-order__headText wow fadeInUp delay-0.5s">Еще остались вопросы?</h3>
+        <div class="call-order__text wow fadeInUp delay-0.5s">Оставьте нам свои данные и мы свяжемся с вами в кратчайшие сроки</div>
+        <form class="wow fadeInUp delay-0.5s"">
          
-            <div class="form-group d-flex justify-content-around">
+            <div class="form-group d-flex justify-content-around ">
               <div class="input-overlay col-md-5 col-12"> 
                 <input type="nameInput" class="form-control col-ms-5" id="name"  placeholder="Введите имя">
               </div>
@@ -415,46 +417,42 @@
         </form>
        </div>
      </div>
-<div class="overlay-popup" id="overlay-popup">
-  <div class="container">
+     <div class="container"> <!--Modal window-->
+      <!-- Trigger the modal with a button -->
+      
     
-      <div class="popup col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10" id="#popup">
-        <h4 class="leave-order-text">Оставить заявку</h4>
-        <div class="form-group d-flex justify-content-around">
-          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10"> 
-            <label for="nameInput">Введите имя</label>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <label for="nameInput">Введите имя</label>
             <input type="nameInput" class="form-control col-ms-5" id="name"  placeholder="">
-          </div>
-        </div>
-        <div class="form-group d-flex justify-content-around">   
-          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">  
             <label for="nameInout">Введите номер телефона</label>        
-          <input type="tel" class="form-control col-ms-5" id="intlTelInput" placeholder="" style="display:block; margin : 0 auto;">
-        </div>
-        </div>
-        <div class="form-group d-flex justify-content-around">   
-          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">          
-            <label for="nameInout">Введите свой адрес</label> 
+          <input type="tel" class="form-control col-ms-5" id="intlTelInput" name="phone" data-inputmask="'mask': '+7 999-999-99-99'" placeholder="" style="display:block; margin : 0 auto;">
+          <label for="nameInout">Введите свой адрес</label> 
           <input type="adress" class="form-control col-ms-5" id="exampleInputAdress" placeholder="" style="display:block; margin : 0 auto;">
-        </div>
-        </div>
-        <div class="form-group d-flex justify-content-around">   
-          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">    
-            <label for="nameInout">Выберите дату</label>       
+          <label for="nameInout">Выберите дату</label>       
           <input type="date" class="form-control col-ms-5" id="exampleInputAdress" placeholder="" style="display:block; margin : 0 auto;">
-        </div>
-        </div>
-        <div class="form-group d-flex justify-content-around">   
-          <div class="input-overlay col-xl-9 col-lg-9 col-md-9 col-sm-10 col-10">     
-            <label for="nameInout">Выберите удобное время</label>      
+          <label for="nameInout">Выберите удобное время</label>      
           <input type="time" class="form-control col-ms-5" id="exampleInputTime" placeholder="" style="display:block; margin : 0 auto;">
         </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default">Оставить заявку</button>
+            </div>
+          </div>
+          
         </div>
-        <div class="call-order__button"><button type="submit" class="btn btn-primary">Оставить заявку</button></div>
-        
       </div>
-  </div>
-</div>
+      
+    </div>
+  <script src="/js/wow.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
