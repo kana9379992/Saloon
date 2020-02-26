@@ -41,4 +41,7 @@ $(document).on("click", function(){
 });
 });
 new WOW().init();
-$("#intlTelInput").inputmask();
+
+$(document).ready(function(){
+$(".input-phone").mask("+7 (999) 999-99-99");
+});
