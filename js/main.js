@@ -32,14 +32,6 @@ $(document).on("scroll", function(){
     $("#banner").removeClass("shrink");
   }
 });
-$(document).ready(function(){
-$('.navbar_call_order').on('click',function(){
-  $('.overlay-popup').fadeIn( "slow")
-});
-$(document).on("click", function(){
-  $('#overlay-popup').fadeOut( "slow")
-});
-});
 new WOW().init();
 
 $(document).ready(function(){
