@@ -417,41 +417,43 @@
         </form>
        </div>
      </div>
-     <div class="container"> <!--Modal window-->
-      <!-- Trigger the modal with a button -->
-      
-    
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+     <form action="/php/sendToTelegram.php" method="POST">
+      <div class="container"> <!--Modal window-->
+        <!-- Trigger the modal with a button -->
         
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-              <label for="nameInput">Введите имя</label>
-            <input type="nameInput" class="form-control col-ms-5" id="name"  placeholder="">
-            <label for="nameInout">Введите номер телефона</label>        
-          <input type="tel" class="form-control col-ms-5 input-phone" id="intlTelInput" placeholder="" style="display:block; margin : 0 auto;">
-          <label for="nameInout">Введите свой адрес</label> 
-          <input type="adress" class="form-control col-ms-5" id="exampleInputAdress" placeholder="" style="display:block; margin : 0 auto;">
-          <label for="nameInout">Выберите дату</label>       
-          <input type="date" class="form-control col-ms-5" id="exampleInputAdress" placeholder="" style="display:block; margin : 0 auto;">
-          <label for="nameInout">Выберите удобное время</label>      
-          <input type="time" class="form-control col-ms-5" id="exampleInputTime" placeholder="" style="display:block; margin : 0 auto;">
-        </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default">Оставить заявку</button>
-            </div>
-          </div>
-          
-        </div>
-      </div>
       
-    </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+              </div>
+              <div class="modal-body">
+                <label for="nameInput">Введите имя</label>
+              <input type="nameInput" class="form-control col-ms-5" id="name" name="user_name" placeholder="">
+              <label for="nameInout">Введите номер телефона</label>        
+            <input type="tel" class="form-control col-ms-5 input-phone" id="intlTelInput" name="user_phone" placeholder="" style="display:block; margin : 0 auto;">
+            <label for="nameInout">Введите свой адрес</label> 
+            <input type="address" class="form-control col-ms-5" id="exampleInputAddress" name="user_address" placeholder="" style="display:block; margin : 0 auto;">
+            <label for="nameInout">Выберите дату</label>       
+            <input type="date" class="form-control col-ms-5" id="exampleInputDate" placeholder="" name="user_date" style="display:block; margin : 0 auto;">
+            <label for="nameInout">Выберите удобное время</label>      
+            <input type="time" class="form-control col-ms-5" id="exampleInputTime" placeholder="" name="user_time" style="display:block; margin : 0 auto;">
+          </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default">Оставить заявку</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+     </form>
   <script src="/js/wow.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
